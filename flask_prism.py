@@ -6,6 +6,8 @@ from flask import Response, current_app, request
 
 __all__ = ('Refract', 'Prism', 'ResponseMapper')
 
+# if status code = 200 then success else should give an network error message
+
 
 class Refract(Response):
     STATUS_OK = 200
